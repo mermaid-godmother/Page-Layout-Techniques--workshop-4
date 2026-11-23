@@ -1,0 +1,161 @@
+
+
+/* TASK 2: Text and Background Styling */
+
+body {
+    background-color: lavender;
+    font-family: Arial, sans-serif;
+    color: #333333;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+p {
+    color: darkslateblue;
+    font-size: 16px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+/* TASK 3: Padding and Margin */
+
+.content-box {
+    padding: 20px;
+    margin: 10px;
+    background-color: #f3e8ff;
+    border: 1px solid purple;
+}
+
+/* TASK 4: Style the Table */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #c8a2c8;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: mediumpurple;
+    color: white;
+}
+
+td {
+    background-color: #f3e8ff;
+}
+
+/* TASK 4: Style the Form */
+  
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background-color: #f3e8ff;
+    padding: 25px;
+    border: 1px solid purple;
+    border-radius: 12px;
+    max-width: 400px;
+    margin-top: 15px;
+}
+
+
+label {
+    font-weight: bold;
+    color: purple;
+}
+
+input[type="text"],
+input[type="email"] {
+    padding: 10px;
+    border: 1px solid #c8a2c8;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: purple;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: mediumpurple;
+}
+.transition-button {
+    background-color: lightblue;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.transition-button:hover {
+    background-color: lightcoral;
+}
+.animation-box {
+    width: 50px;
+    height: 50px;
+    background-color: lightgreen;
+    position: relative;
+    animation: move 2s infinite alternate;
+}
+
+@keyframes move {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 100px;
+    }
+}
+
+.pseudo-list li:nth-child(odd) {
+    background-color: lightgray 
+    ;
+}
+
+.pseudo-list li:nth-child(even) {
+    background-color: white;
+}
+.filter-image {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.filter-image:hover {
+    filter: grayscale(0%);
+}
+
+.quote {
+    position: relative;
+    padding-left: 20px;
+    font-style: italic;
+}
+
+.quote::before {
+    content: '“';
+    font-size: 40px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: lightgray;
+}
+.quote::after {
+    content: '”';
+    font-size: 40px;
+    color: lightgray;
+    vertical-align: middle;
+    line-height: 0;
+}
